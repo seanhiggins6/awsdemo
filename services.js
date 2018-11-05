@@ -6,9 +6,5 @@ var services = [
 	{
 		"name": "APPD UAT",
 		"key": "23ecf4a40e4548f9a0cfae3ae6cb8b28"
-	},
-	{
-		"name": "Junk",
-		"key": "lkjdhslkh"
 	}
 ]
