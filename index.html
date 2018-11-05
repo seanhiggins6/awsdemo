@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	    <meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>PagerDuty AWS Demo</title>
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+		<link href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" rel="stylesheet">
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.11.2/css/bootstrap-select.min.css" rel="stylesheet">
+	</head>
+
+
+	<body>
+		<div id="content" class="container-fluid">
+			<div class="row"><p></p></div>
+			<div class="row">
+				<div class="col-md-12">
+					Service: <select class="selectpicker" id="service-select"></select>
+					Payload: <select class="selectpicker" id="payload-select"></select>
+					<button class="btn btn-primary" id="send-button">Send</button>
+				</div>
+			</div>
+			<div class="row"><p></p></div>
+			<div class="row">
+				<div class="col-md-12" id="result"></div>
+			</div>
+		</div>
+
+		<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.11.2/js/bootstrap-select.min.js"></script>
+		<script src="payloads.js"></script>
+		<script src="services.js"></script>
+		<script src="awsdemo.js"></script>
+	</body>
+</html>
