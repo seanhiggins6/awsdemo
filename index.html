@@ -18,10 +18,16 @@
 				<div class="col-md-12">
 					Service: <select class="selectpicker" id="service-select"></select>
 					Payload: <select class="selectpicker" id="payload-select"></select>
-					<button class="btn btn-primary" id="send-button">Send</button>
+					<button class="btn btn-primary" id="send-button">Send Event</button>
 				</div>
 			</div>
 			<div class="row"><p></p></div>
+			<div class="row">
+				<div class="col-md-12">
+					Sequence: <select class="selectpicker" id="sequence-select"></select>
+					<button class="btn btn-primary" id="sequence-send-button">Send Sequence</button>
+				</div>
+			</div>
 			<div class="row">
 				<div class="col-md-12" id="result"></div>
 			</div>
@@ -32,6 +38,7 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.11.2/js/bootstrap-select.min.js"></script>
 		<script src="payloads.js"></script>
 		<script src="services.js"></script>
+		<script src="sequences.js"></script>
 		<script src="awsdemo.js"></script>
 	</body>
 </html>
