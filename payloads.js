@@ -107,6 +107,28 @@ var ct_add_user_to_group = {
     }]
 };
 
+var phd_elb_api_issue = {
+    "Type": "Notification",
+    "Message":
+    "{\"version\":\"0\",\"id\":\"7bf73129-1428-4cd3-a780-95db273d1602\",\"detail-type\":\"AWS Health Event\",\"source\":\"aws.health\",\"account\":\"123456789012\",\"time\":\"2016-06-05T06:27:57Z\",\"region\":\"ap-southeast-2\",\"resources\":[],\"detail\":{\"eventArn\":\"arn:aws:health:ap-southeast-2::event/AWS_ELASTICLOADBALANCING_API_ISSUE_90353408594353980\",\"service\":\"ELASTICLOADBALANCING\",\"eventTypeCode\":\"AWS_ELASTICLOADBALANCING_API_ISSUE\",\"eventTypeCategory\":\"issue\",\"startTime\":\"Sat, 04 Jun 2016 05:01:10 GMT\",\"endTime\":\"Sat, 04 Jun 2016 05:30:57 GMT\",\"eventDescription\":[{\"language\":\"en_US\",\"latestDescription\":\"A description of the event will be provided here\"}]}}",
+    "SigningCertURL": "https://sns.us-west-2.amazonaws.com/SimpleNotificationService-ac565b8b1a6c5d002d285f9598aa1d9b.pem",
+    "UnsubscribeURL": "https://sns.us-west-2.amazonaws.com/?Action=Unsubscribe&SubscriptionArn=arn:aws:sns:us-west-2:785665517223:guard-duty:929fb486-5851-4cdc-8b25-8cc026afea70"
+};
+
+var phd_ec2_store_drive = {
+  "Type" : "Notification",
+  "Message" : "{\n    \"version\": \"0\",\n    \"id\": \"7bf73129-1428-4cd3-a780-95db273d1602\",\n    \"detail-type\": \"AWS Health Event\",\n    \"source\": \"aws.health\",\n    \"account\": \"123456789012\",\n    \"time\": \"2016-06-05T06:27:57Z\",\n    \"region\": \"us-west-2\",\n    \"resources\": [\n        \"i-abcd1111\"\n    ],\n    \"detail\": {\n        \"eventArn\": \"arn:aws:health:us-west-2::event/AWS_EC2_INSTANCE_STORE_DRIVE_PERFORMANCE_DEGRADED_90353408594353980\",\n        \"service\": \"EC2\",\n        \"eventTypeCode\": \"AWS_EC2_INSTANCE_STORE_DRIVE_PERFORMANCE_DEGRADED\",\n        \"eventTypeCategory\": \"issue\",\n        \"startTime\": \"Sat, 05 Jun 2016 15:10:09 GMT\",\n        \"eventDescription\": [\n            {\n                \"language\": \"en_US\",\n                \"latestDescription\": \"A description of the event will be provided here\"\n            }\n        ],\n        \"affectedEntities\": [\n            {\n                \"entityValue\": \"i-abcd1111\"\n            }\n        ]\n    }\n}",
+  "SigningCertURL" : "https://sns.us-west-2.amazonaws.com/SimpleNotificationService-ac565b8b1a6c5d002d285f9598aa1d9b.pem",
+  "UnsubscribeURL" : "https://sns.us-west-2.amazonaws.com/?Action=Unsubscribe&SubscriptionArn=arn:aws:sns:us-west-2:957132980467:PHD-test:7bdb10b4-7115-4b27-9057-d423ce900543"
+};
+
+var phd_ebs_volume_lost = {
+  "Type" : "Notification",
+  "Message" : "{\n\t\"version\": \"0\",\n\t\"id\": \"af453f29-628d-a62e-f67b-3f49df35e0b1\",\n\t\"detail-type\": \"AWS Health Event\",\n\t\"source\": \"aws.health\",\n\t\"account\": \"202461451200\",\n\t\"time\": \"2018-09-18T04:01:40Z\",\n\t\"region\": \"us-east-1\",\n\t\"resources\": [\n\t\t\"vol-dummy\"\n\t],\n\t\"detail\": {\n\t\t\"eventArn\": \"arn:aws:health:us-east-1::event/EBS/AWS_EBS_VOLUME_LOST/AWS_EBS_VOLUME_LOST_event-1537390908739\",\n\t\t\"service\": \"EBS\",\n\t\t\"eventTypeCode\": \"AWS_EBS_VOLUME_LOST\",\n\t\t\"eventTypeCategory\": \"scheduledChange\",\n\t\t\"startTime\": \"Tue, 18 Sep 2018 04:01:40 GMT\",\n\t\t\"eventDescription\": [{\n\t\t\t\"language\": \"en_US\",\n\t\t\t\"latestDescription\": \"Your volume experienced a failure due to multiple component failures and we were unable to recover it. Although EBS volumes are designed for reliability, including being backed by multiple physical drives, we are still exposed to durability risks when multiple concurrent component failures occur before we are able to restore redundancy. We publish our durability expectations on the EBS detail page here (http://aws.amazon.com/ebs/details).\\\\n\\\\nFind out what you can do to fix this issue at https://aws.amazon.com/premiumsupport/knowledge-center/ebs-error-status/\\\\n\\\\nWe apologize for the inconvenience this may have caused you. If you have any further questions or comments regarding this matter, please contact us at: http://aws.amazon.com/support\"\n\t\t}],\n\t\t\"affectedEntities\": [{\n\t\t\t\"entityValue\": \"vol-dummy\"\n\t\t}]\n\t}\n}",
+  "SigningCertURL" : "https://sns.us-west-2.amazonaws.com/SimpleNotificationService-ac565b8b1a6c5d002d285f9598aa1d9b.pem",
+  "UnsubscribeURL" : "https://sns.us-west-2.amazonaws.com/?Action=Unsubscribe&SubscriptionArn=arn:aws:sns:us-west-2:957132980467:PHD-test:7bdb10b4-7115-4b27-9057-d423ce900543"
+};
+
 var payloads = {
     "CloudTrail: Add User To Group": ct_add_user_to_group,
     "GuardDuty: RDP Brute Force Attack": rdp_brute_force,
