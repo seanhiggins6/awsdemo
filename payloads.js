@@ -1,7 +1,5 @@
 var gd1 = {
     "Type": "Notification",
-    "MessageId": "1e0d416a-272a-598d-89cb-1534b9304fe4",
-    "TopicArn": "arn:aws:sns:us-east-1:785665517223:PD-GuardDuty",
     "Message":
     {
         "client": "AWS Console",
@@ -176,9 +174,6 @@ var gd1 = {
             }
         }
     },
-    "Timestamp": "2018-11-08T20:26:02.608Z",
-    "SignatureVersion": "1",
-    "Signature": "aEZ5bgxPe6mVHPAbtX4P8NLBXh3yEHVPpoYQXwxI8HRvUu9QlFXMxeT7jVgPGXsC/WVPCX34iPvhO6X07bV+ausn3hkrY2IS0Dhe+Q2ZvKvPnnYquyFIXG29sPSnVrVPmcAa0iua70kBSo9OGJ0V2E71NvmkEquyjrl5OG0f2ckz6V+E0D4gfu+/kAE61G9Nr6MzCpnaPh02agZZ0E3o4DDNy+HHiowGQ8RrFcB6TUEguSGfQPX09Ud+fdnrWBjDjrP/w+jb1ijzmZ7gyBuYz2OMfrWBxposmFEnS+qRkqmjO5LOkQW70g4LVctNbSLK/yNybXK2+jA7mcapm0VHQQ==",
     "SigningCertURL": "https://sns.us-east-1.amazonaws.com/SimpleNotificationService-ac565b8b1a6c5d002d285f9598aa1d9b.pem",
     "UnsubscribeURL": "https://sns.us-east-1.amazonaws.com/?Action=Unsubscribe&SubscriptionArn=arn:aws:sns:us-east-1:785665517223:PD-GuardDuty:658275cf-64ca-4874-a4e5-d20b4aa45416"
 };
